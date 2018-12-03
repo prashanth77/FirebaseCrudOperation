@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:tooltipText="Expense_Manager"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <RelativeLayout
+        android:id="@+id/relatvie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+       android:layout_below="@+id/toolbar"
+        >
+        <Spinner
+            android:id="@+id/spiner_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            ></Spinner>
+
+        <EditText
+            android:id="@+id/edit_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spiner_payment"
+            android:hint="DATE"
+            android:layout_marginTop="20dp"
+            android:focusable="false"
+            />
+
+        <EditText
+            android:id="@+id/edit_itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_date"
+            android:hint="Item_Name"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_itemdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_itemName"
+            android:hint="Item_details"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_itemdetails"
+            android:hint="Item_price"
+            android:layout_marginTop="20dp"
+            android:inputType="numberDecimal"
+
+            />
+
+
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_price"
+            android:layout_marginTop="20dp"
+
+            ></Spinner>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relatvie"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:layout_weight="2"
+
+            />
+
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:layout_weight="2"
+            android:text="UPDATE"
+            android:visibility="gone"
+
+            />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="DELETE"
+            android:layout_weight="2"
+            android:visibility="gone"
+
+            />
+
+        <Button
+            android:id="@+id/btn_can"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW"
+            android:layout_weight="2"
+
+            />
+
+    </LinearLayout>
+</RelativeLayout>

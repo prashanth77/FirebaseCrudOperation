@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/la_name"
+            android:text="NAME"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_weight="3"
+
+
+            />
+
+        <TextView
+            android:id="@+id/la_category"
+            android:text="Category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_weight="3"
+
+            />
+
+
+        <TextView
+            android:id="@+id/la_price"
+            android:text="Item Price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_weight="3"
+
+            />
+        <TextView
+            android:id="@+id/la_date"
+            android:text="Date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_weight="3"
+
+            />
+
+    </LinearLayout>
+
